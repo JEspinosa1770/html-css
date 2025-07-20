@@ -1,0 +1,22 @@
+table {
+    table-layout: fixed;
+    width: 30%;
+    border-collapse: collapse;
+    border: 3px solid purple;
+    background-color: cornflowerblue;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+th,
+td {
+    /* background-color: aquamarine; */
+    padding: 20px;
+    border: 3px rgb(170, 25, 6) solid;
+}
