@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estils_form.css" />
+    <style>
+        @font-face {
+            font-family: 'Oswald';
+            src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+        }
+        body {
+            font-family: 'Oswald';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul>  
+                <li><a href="jordiespinosa.html">Torna enrere</a></li>
+                <li><a href="index.html">Ves a l'inici</a></li>
+                <li><a href="je_etiquetes.html">Ves a etiquetes</a></li>
+                <li><a href="je_taules.html">Ves a taules</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Formularis</h1><br><br>
+    <form action="mailto:elmeu@correu.com?subject=Formulari de proves" enctype="text/plain" method="post">
+        <ul>
+            <li>
+                <label for="nomInput">Nom:</label>
+                <input type="text" id="nomInput" name="nom" placeholder="ex. Jana" required minlength="2" maxlength="15"><br>
+                <!-- el required funciona només amb botons tipus submit -->
+            </li>
+            <li>
+                <label for="cognomInput">Cognom:</label>
+                <input type="text" id="cognomInput" name="cognom" placeholder="ex. Darem" required><br>
+            </li>
+            <li>
+                <label for="mailInput">Correu:</label>
+                <input type="email" id="mailInput" placeholder="ex. janadarem@alaplatja.com" required><br>
+            </li>
+            <li>
+                <label for="seleccio">Tipus de consulta (amb select):</label>
+                <select id="seleccio">
+                    <option value="0">Tria una opció</option>
+                    <option value="1">Suport tècnic</option>
+                    <option value="2">General</option>
+                    <option value="3">Post-venda</option>
+                </select>
+            </li>
+            <li>
+                <label for="seleccioRadio">Tipus de consulta (amb radio):</label>
+                <input type="radio" class="motiu" name="motiu" id="suport-tecnic" value="Suport tècnic" required>
+                <label for="suport-tecnic" class="motiu">Suport tècnic</label>
+                <input type="radio" class="motiu" name="motiu" id="general" value="General" required>
+                <label for="general" class="motiu">General</label>
+                <input type="radio" class="motiu" name="motiu" id="post-venda" value="Post-venda" required>
+                <label for="post-venda" class="motiu">Post-venda</label>
+            </li>
+            <li>
+                <label for="missatgeInput">Missatge:</label>
+                <textarea id="missatgeInput" name="missatge"></textarea><br>
+            </li>
+            <li>
+                <button type="submit">Envia les dades amb button</button>
+                <input type="submit" value="Envia les dades amb input">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
