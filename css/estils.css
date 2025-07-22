@@ -16,6 +16,13 @@ header {
     float: left;
 }
 
+.principal {
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin: auto;
+}
+
 nav {
     width: 600px;
     height: 80px;
