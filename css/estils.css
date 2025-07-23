@@ -1,6 +1,7 @@
 body {
-    background-color: darkcyan;
-    width: 99%;
+    background-image: linear-gradient(rgb(26, 85, 211),rgb(55, 242, 248));
+    /* background-color: rgb(78, 167, 240); */
+    width: 100%;
     margin: auto;
     /* height: auto; */ /* de moment no posem alçada */
 }
@@ -8,6 +9,20 @@ body {
 header {
     width: 100%;
     height: 100px;
+    background-image: url("/html-css/img/Prova_cap.png");
+    background-position: center;
+}
+
+nav {
+    width: 600px;
+    height: 80px;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -23,15 +38,8 @@ header {
     margin: auto;
 }
 
-nav {
-    width: 600px;
-    height: 80px;
-    float: right;
-}
-
-nav ul {
-    list-style: none;
-    padding-top: 40px;
+.cuerpo {
+    margin-left: 15px;
 }
 
 nav li {
@@ -52,4 +60,20 @@ section {
 footer p {
     text-align: center;
     margin-top: 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: cadetblue;
+}
+
+.taulagen {
+    margin-left: 15px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/html-css/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+h4 {
+    font-family: 'Montserrat';
 }
